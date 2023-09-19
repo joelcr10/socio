@@ -1,0 +1,426 @@
+
+:root{
+  --main-theme: #2EBE7A;
+  --sub-theme: #010202;
+  --text-color: white;
+  --form-input: rgba(252, 252, 252, 0.4);
+}
+
+html { overflow-x: hidden;
+  overflow-y: hidden;
+ }
+
+.loginPage{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.1fr 2fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .leftSide {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: var(--sub-theme);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .logo{
+    height: 40px;
+    display: relative;
+    /* background-color: aqua; */
+    padding-bottom: 40px;
+    margin-left: 0;
+  
+  }
+  
+  .rigthSide {
+    grid-column: 2;
+    grid-row: 1;
+    overflow: hidden;
+  
+  }
+  
+  .form{
+
+  }
+  
+  .form h1{
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  
+  .form label{
+    margin-top: 200px;
+    font-size: 15px;
+    
+  }
+  
+  .form p{
+    margin-top: 20px;
+    font-size: 12px;
+    color: var(--form-input);
+  }
+  
+  .form p a{
+    color: var(--main-theme);
+    font-weight: 600;
+  }
+  
+  .formInput{
+    border: 2.5px solid var(--form-input);
+    background-color: var(--sub-theme);
+    height: 40px;
+    width: 250px;
+    border-radius: 12px;
+    margin-top: 14px;
+    margin-bottom: 22px;
+    background-position: 15px 19px; 
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 10px; 
+    background-size: 22px;
+    background-blend-mode: color-dodge;
+    padding-left: 45px;
+    color: var(--text-color);
+  }
+  
+  #usernameInput{
+    /* background-image: url(../../public/images/icons8-person-30.png); */
+    background-image: url(../../../public/images/icons8-person-30.png);
+  }
+  #passwordInput{
+    background-image: url(../../../public/images/icons8-password-64.png);
+  }
+  
+  .loginButton{
+    background-color: var(--main-theme);
+    height: 50px;
+    width: 310px;
+    border-radius: 12px;
+    /* border: 0px solid rgba(252, 252, 252, 0.4); */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    background-image: url(../../../public/images/60286.jpg);
+    background-size: 800px;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: 1px;
+     /* filter: blur(1px);
+    -webkit-filter: blur(0.5px); */
+  }
+  
+  
+  .loginButton:hover{
+    background-color: #22e087;
+    cursor: pointer;
+  }
+  
+  
+  /* ////////////////Right Side */
+  .insideRight{
+    background-color: #2EBE7A;
+    /* background-image: linear-gradient( #2ebe7bc4, #2ebe7bc5 ),url("../../../public/images/right-background.png") repeat-x; */
+    background: linear-gradient( #2ebe7bc4, #2ebe7bc5 ),url("../../../public/images/right-background.png") repeat-x;
+    height: 100vh;
+    width: 5000px;
+    margin: 0;
+    padding: 0px;
+    background-size: contain;
+    background-repeat: repeat-x;
+    animation: slide 60s linear infinite;
+    position: absolute;
+    z-index: -3;
+    
+  }
+
+
+
+  @keyframes slide{
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1692px, 0, 0);
+    }
+  }
+  
+  .rightTextContainer{
+    left: 45%;
+    position: absolute;
+    top: 10%;
+    z-index: 10;
+    color: white;
+    
+  }
+  
+  .rightTextContainer label{
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    
+  }
+  
+  .rightTextContainer p{
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+  }
+  
+  .bottomPage{
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    width: 500px;
+  }
+  
+  .card{
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-size: cover;
+  
+    box-shadow: 10px 10px 12px #000000a8;
+    /* animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+  }
+  
+  #card1{
+    height: 450px;
+    width: 300px;
+    background-image: url(../../../public/images/card1.jpeg);
+    z-index: 2;
+    animation-name: cardAnimation1;
+    
+  }
+  
+  @keyframes cardAnimation1{
+    /* hold */
+    20%{
+      left: 0;
+      height: 450px;
+      z-index: 2;
+    }
+    21%{
+      z-index: 0;
+    }
+    /* transition */
+    30%{
+      left: 70%;
+      height: 310px;
+      z-index: 0;
+      
+    }
+    /* hold */
+    56%{
+      left: 70%;
+      height: 310px;
+      z-index: 0;
+    }
+  
+    57%{
+      z-index: 1;
+    }
+    /* transition */
+    66%{
+      left: 35%;
+      height: 380px;
+      z-index: 1;
+    }
+    /* hold */
+    90%{
+      left: 35%;
+      height: 380px;
+      z-index: 1;
+    }
+    91%{
+      z-index: 2;
+    }
+    /* transition */
+    100%{
+      left: 0;
+      height: 450px;
+      z-index: 2;
+       
+    }
+    
+  }
+  
+  #card2{
+    height: 380px;
+    width: 300px;
+    left: 35%;
+    background-image: url(../../../public/images/card2.jpeg);
+    z-index: 1;
+    animation-name: cardAnimation2;
+   
+  
+  }
+  
+  @keyframes cardAnimation2{
+    /* hold */
+    20%{
+      left: 35%;
+      height: 380px;
+      z-index: 1;
+    }
+    /* transition */
+    21%{
+      z-index: 2;
+    }
+    30%{
+      left: 0;
+      height: 450px;
+      z-index: 2;
+      
+    }
+    /* hold */
+    56%{
+      left: 0;
+      height: 450px;
+      z-index: 2;
+    }
+    57%{
+      z-index: 0;
+    }
+    /* transition */
+    66%{
+      left: 70%;
+      height: 310px;
+      z-index: 0;
+    }
+    /* hold */
+    90%{
+      left: 70%;
+      height: 310px;
+      z-index: 0;
+    }
+    91%{
+      z-index: 1;
+    }
+    /* transition */
+    100%{
+      left: 35%;
+      height: 380px;
+      z-index: 1;
+       
+    }
+    
+  }
+  
+  #card3{
+    height: 310px;
+    width: 300px;
+    left: 70%;
+    background-image: url(../../../public/images/card3.jpeg);
+    z-index: 0;
+    animation-name: cardAnimation3;
+  
+  }
+  
+  
+  @keyframes cardAnimation3{
+    /* hold */
+    20%{
+      left: 70%;
+      height: 310px;
+      z-index: 0;
+    }
+    /* transition */
+    21%{
+      z-index: 1;
+    }
+    30%{
+      left: 35%;
+      height: 380px;
+      z-index: 1;
+      
+    }
+    /* hold */
+    56%{
+      left: 35%;
+      height: 380px;
+      z-index: 1;
+    }
+    57%{
+      z-index: 2;
+    }
+    /* transition */
+    66%{
+      left: 0;
+      height: 450px;
+      z-index: 2;
+    }
+    /* hold */
+    90%{
+      left: 0;
+      height: 450px;
+      z-index: 2;
+    }
+    91%{
+      z-index: 0;
+    }
+    /* transition */
+    100%{
+      left: 70%;
+      height: 310px;
+      z-index: 0;
+       
+    }
+    
+  }
+
+  
+
+
+  @media screen and (max-width: 915px){
+    .loginPage{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+    }
+      .leftSide{
+        /* display: none; */
+        height: 550px;
+        width: auto;
+        display: absolute;
+        margin-top: 50px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px 7px #000000a8;
+
+      }
+
+      .bottomPage{
+        display: none;
+      }
+      .rightTextContainer{
+        display: none;
+      }
+
+      @keyframes slide{
+        0% {
+          transform: translate3d(-1000px, 0, 0);
+        }
+        100% {
+          transform: translate3d(-1692px, 0, 0);
+        }
+      }
+  }
+
+  @media screen and (max-width: 430px){
+      .loginPage{
+        background-color: var(--sub-theme);
+      }
+  }
+  
+  
