@@ -2,6 +2,7 @@
 <h3>Platform for friends to share photos</h3>
 
 <h3>To run the project</h3>
+
 ### `npm install`
 -- install all the dependencies
 
