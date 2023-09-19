@@ -12,10 +12,9 @@
 <h3>Preview</h3>
 
 <label>Sign In page</label>
-![Screenshot 2023-09-10 011748](https://github.com/joelcr10/socio/assets/67091039/5ac9765a-cbd1-4919-b050-cd5c6b8bd3c8)
 
 
+https://github.com/joelcr10/socio/assets/67091039/ff590a18-01b3-4b47-9298-7958dcb241d2
 
 
-https://github.com/joelcr10/socio/assets/67091039/7496f04f-c7bd-4f43-945f-3ea8987954c8
 
