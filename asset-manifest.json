@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/socio/static/css/main.b281ee9c.css",
+    "main.js": "/socio/static/js/main.b88186ff.js",
+    "static/media/right-background.png": "/socio/static/media/right-background.8c0c074cf5e6cb9fa6da.png",
+    "static/media/60286.jpg": "/socio/static/media/60286.f16c95646266acc5f0c0.jpg",
+    "static/media/card3.jpeg": "/socio/static/media/card3.8d4deaefdee69494c3d8.jpeg",
+    "static/media/card2.jpeg": "/socio/static/media/card2.d876c3cd4600f67bd1cd.jpeg",
+    "static/media/card1.jpeg": "/socio/static/media/card1.aa2ce0f8e9ca4f3debb8.jpeg",
+    "index.html": "/socio/index.html",
+    "main.b281ee9c.css.map": "/socio/static/css/main.b281ee9c.css.map",
+    "main.b88186ff.js.map": "/socio/static/js/main.b88186ff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b281ee9c.css",
+    "static/js/main.b88186ff.js"
+  ]
+}
